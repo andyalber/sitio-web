@@ -1,0 +1,38 @@
+// Cambia el tamaño base de las letras al superar los 800px
+@media screen and (min-width: 801px) 
+{
+	@font-size-base:          20px;
+}
+@media screen and (max-width: 800px) 
+{
+	@font-size-base:          14px;
+}
+
+//Hace desaparecer el texto del carrousel en panallas más pequeñas
+@media screen and (max-width: 800px) 
+{
+	div.carousel-caption{
+		display:none;
+
+	}
+}
+
+//Cambia los botones sociales, para que al verse en móviles sea una barra más grande y más fácil de clicar.
+@media screen and (max-width: 480px) 
+{
+	.boton-grande{
+	display:block;
+	}
+	.boton-pequeno{
+	display:none;
+	}
+}
+@media screen and (min-width: 481px) 
+{
+	.boton-grande{
+	display:none;
+	}
+	.boton-pequeno{
+	display:block;
+	}
+}
