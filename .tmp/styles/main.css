@@ -1018,6 +1018,13 @@ fieldset[disabled] .btn-yahoo.active {
   color: #720e9e;
   background-color: #ffffff;
 }
+span.tag {
+  font-weight: bold;
+}
+h1,
+h2 {
+  font-color: #F6546A;
+}
 @media screen and (max-width: 800px) {
   div.carousel-caption {
     display: none;
@@ -2121,12 +2128,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #e5e500;
+  color: #f6546a;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #999900;
+  color: #f10d2c;
   text-decoration: underline;
 }
 a:focus {
@@ -2209,7 +2216,7 @@ h6,
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
-  color: inherit;
+  color: #e5e500;
 }
 h1 small,
 h2 small,
@@ -4312,7 +4319,7 @@ fieldset[disabled] .btn-danger.active {
   background-color: #ffffff;
 }
 .btn-link {
-  color: #e5e500;
+  color: #f6546a;
   font-weight: normal;
   border-radius: 0;
 }
@@ -4332,7 +4339,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #999900;
+  color: #f10d2c;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -4895,7 +4902,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a:hover,
 .nav .open > a:focus {
   background-color: #ffffff;
-  border-color: #e5e500;
+  border-color: #f6546a;
 }
 .nav .nav-divider {
   height: 1px;
@@ -5610,7 +5617,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding: 6px 12px;
   line-height: 1.42857143;
   text-decoration: none;
-  color: #e5e500;
+  color: #f6546a;
   background-color: #ffffff;
   border: 1px solid #dddddd;
   margin-left: -1px;
@@ -5630,7 +5637,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
-  color: #999900;
+  color: #f10d2c;
   background-color: #ffffff;
   border-color: #dddddd;
 }
@@ -5826,7 +5833,7 @@ a.badge:focus {
 }
 .list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: #e5e500;
+  color: #f6546a;
   background-color: #ffffff;
 }
 .list-group-item > .badge {
@@ -5895,7 +5902,7 @@ a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #e5e500;
+  border-color: #f6546a;
 }
 .thumbnail .caption {
   padding: 9px;
