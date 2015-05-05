@@ -1,21 +1,30 @@
 h1,h2{
 	font-color: #F6546A;
 }
-
-
-
+@media screen and (min-width: 800px){
+	.input-block-level{
+		color: black;
+		width:80%;
+	}
+}
+@media screen and (max-width: 799px) {
+	.input-block-level{
+		width:70%;
+		color: black;
+	}
+}
 // Cambia el tamaño base de las letras al superar los 800px
-@media screen and (min-width: 801px) 
+@media screen and (min-width: 800px)
 {
 	@font-size-base:          20px;
 }
-@media screen and (max-width: 800px) 
+@media screen and (max-width: 799px) 
 {
 	@font-size-base:          14px;
 }
 
 //Hace desaparecer el texto del carrousel en panallas más pequeñas
-@media screen and (max-width: 800px) 
+@media screen and (max-width: 799px) 
 {
 	div.carousel-caption{
 		display:none;
@@ -24,7 +33,7 @@ h1,h2{
 }
 
 //Cambia los botones sociales, para que al verse en móviles sea una barra más grande y más fácil de clicar.
-@media screen and (max-width: 480px) 
+@media screen and (max-width: 479px) 
 {
 	.boton-grande{
 	display:block;
@@ -33,7 +42,7 @@ h1,h2{
 	display:none;
 	}
 }
-@media screen and (min-width: 481px) 
+@media screen and (min-width: 480px) 
 {
 	.boton-grande{
 	display:none;

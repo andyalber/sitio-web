@@ -21,7 +21,8 @@
     <link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
     <!-- Iconos de FontAwesome -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
+    <!-- PHP para el formulario -->
+    <?php include 'valida.php'; ?>
   </head>
   <body>
     <!--[if lt IE 10]>
@@ -58,8 +59,8 @@
           </ul>
         </li>
         -->
-        <li class="active"><a href="tutorials.html">Video Tutoriales</a></li>
-        <li><a href="contact.html">Contacto</a></li>
+        <li><a href="tutorials.html">Video Tutoriales</a></li>
+        <li class="active"><a href="contact.html">Contacto</a></li>
       </ul>
       
     </div><!-- /.navbar-collapse -->
@@ -68,34 +69,24 @@
 
       <div class="container">
         <div class="row marketing">
-          <div class="col-lg-14 col-md-14 col-sm-14 text-center"><div class="well"><h1>Videotutoriales</h1>
-          <p></p></div></div>
+          <div class="col-lg-12 col-md-12 col-sm-12 text-center"><div class="well"><h1>Contacto</h1>
         </div>
-
-       
-      <div class="row marketing">
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 well">
-            <div class="row"> 
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <h2>Tutoriales de configuración de Linux:</h2>
-                  <p>Para clase tuve que grabar varios videotutoriales sobre configuración de Ubuntu. Aquí unas muestras:</p>
-            </div>
-            </div>
-            <div class="row"> 
-            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
-               <img class="img-responsive" src="images/alber_logo1.png" alt="logo andres">
-               <img class="img-responsive" src="images/alber_logo2.png" alt="logo andres">
-            </div>
-            <div class="col-lg-8 col-md-8 col-sm-6 col-xs-6">
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe  src="https://www.youtube.com/embed/KHiTz6NsiXo" allowfullscreen></iframe>
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
-               <img class="img-responsive" src="images/alber_logo3.png" alt="logo andres">
-               <img class="img-responsive" src="images/alber_logo4.png" alt="logo andres">
-            </div>
-            </div>
+        <div class="row marketing">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="well">
+              <form name="enq" method="post" action="contact.html" onsubmit="return validation();">
+                <fieldset>    
+                  <p><span="tag">Nombre:</span="tag"></p>
+                  <p><input type="text" name="name" id="name" value=""  class="c input-block-level" placeholder="Name" /></p>
+                  <p><span="tag">E-Mail:</span="tag"></p>
+                  <p><input type="text" name="email" id="email" value="" class="input-block-level" placeholder="Email" /></p>
+                  <p><span="tag">Mensaje:</span="tag"></p>
+                  <p><textarea rows="11" name="message" id="message" class="input-block-level" placeholder="Comments"></textarea></p>
+                  <div class="actions">
+                    <input type="submit" value="¡Pulsa aquí para enviar tu mensaje!" name="submit" id="submitButton" class="btn btn-info pull-right" title="Click here to submit your message!" />
+                  </div>
+                </fieldset>
+              </form> 
             
             
             
@@ -179,8 +170,12 @@
         <script src="bower_components/bootstrap/js/scrollspy.js"></script>
         <script src="bower_components/bootstrap/js/collapse.js"></script>
         <script src="bower_components/bootstrap/js/tab.js"></script>
+        <script type="text/javascript" src="scripts/validation.js"></script>
         <!-- endbuild -->
         
+        <!-- Javascript para validar el formulario-->
+        
+
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
